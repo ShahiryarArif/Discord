@@ -1,36 +1,151 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 3D Portfolio Project
 
-## Getting Started
+A modern React application for creating portfolio project.
 
-First, run the development server:
+## Technologies Used
 
+- **NextJS** - Framework for building FullStack Applications
+- **TypeScript** - Static type checking for JavaScript
+- **Tailwind** - Component library for building accessible React applications
+- **Tanstack** - Routing library for React applications
+- **ShadCN** - Components library
+- **Clerk** - For Auth Implementation
+
+## Prerequisites
+
+Before you begin, ensure you have the following installed:
+- Node.js (version 16.x or higher)
+- npm (version 8.x or higher) or yarn (version 1.22.x or higher)
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd [project-directory]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Running the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Development Mode
 
-## Learn More
+To start the development server:
+```bash
+npm start
+# or
+yarn start
+```
+The application will open in your default browser at `http://localhost:3000`
 
-To learn more about Next.js, take a look at the following resources:
+### Production Build
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To create a production build:
+```bash
+npm run build
+# or
+yarn build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The build files will be created in the `build` directory.
 
-## Deploy on Vercel
+To serve the production build locally:
+```bash
+npm install -g serve
+serve -s build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Project Structure
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+src/
+├── components/           # Reusable components
+├── pages/                # Web pages components
+│   ├── common/           # Common UI components
+│   ├── icons/            # SVG icons and icon components
+│   └── GlobalDashboard/  # Dashboard-specific components
+├── utils/
+│   ├── api/             # API service functions
+│   ├── context/         # React context providers
+│   └── hooks/           # Custom React hooks
+├── pages/               # Page components
+└── App.tsx             # Root component
+```
+
+## Key Features
+
+- 🔔 Real-time notifications
+- 📊 Campaign management
+- 🏢 Brand registration
+- 📱 Responsive design
+- 🔐 User authentication
+- 🌐 Multi-tab interface
+
+## Development Guidelines
+
+### Coding Standards
+
+- Use TypeScript for type safety
+- Follow ESLint and Prettier configurations
+- Use proper component naming conventions
+- Implement error boundaries where necessary
+- Write clear and concise comments
+
+### State Management
+
+- Use React Query for server state
+- Use Context API for global application state
+- Use local state for component-specific state
+
+### Styling
+
+- Use Chakra UI components for consistent styling
+- Follow the design system variables
+- Use responsive design principles
+- Maintain accessibility standards
+
+## Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App
+- `npm run lint` - Runs ESLint
+- `npm run format` - Formats code with Prettier
+
+## Contributing
+
+1. Create a new branch from `main`
+2. Make your changes
+3. Submit a pull request
+4. Wait for review and approval
+
+## Troubleshooting
+
+Common issues and their solutions:
+
+1. **Build Errors**
+   - Clear npm cache: `npm cache clean --force`
+   - Delete node_modules and reinstall: `rm -rf node_modules && npm install`
+
+2. **API Connection Issues**
+   - Verify environment variables
+   - Check API endpoint availability
+   - Confirm CORS settings
+
+## Support
+
+For support, please:
+1. Check existing documentation
+2. Search closed issues
+3. Open a new issue if needed
+
+## License
+
+[Your License Here]
